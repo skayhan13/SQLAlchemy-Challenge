@@ -1,6 +1,10 @@
 # SQLAlchemy-Challenge
 
 ### Directory Overview
+* The "climate_final.ipynb" contains the code for Step 1 of the assignment.  "climate_starter.ipynb" is the starter code provided.
+* The "Resources" directory has the sqlite file for the Hawaii data which the analyses will be conducted off of.  
+* The "Images" directory contains visualizations of the plots required in Step 1 of the assignment.
+* app.py is a flask API that was created in accordance with Step 2 of the assignment.  Execute the file in a terminal window to recieve the API URL created.  Paste the URL into the Internet browser of your choice.  API documentation for the /api/v1.0/<start> requires the user to input a start date in the ISO (yyyy-mm-dd) format for the API to return results.  For example, if you wanted temperature data starting on March 1, 2016 you would input the following URL into your browser: http://127.0.0.1:5000//api/v1.0/2016-03-01.  If you wanted temperature data from January 16, 2016 to September 16, 2017 then you would input the following URL into your browser: http://127.0.0.1:5000//api/v1.0/2016-01-16/2017-09-16. These are examples of dynamic API routes.
 
 ### Before You Begin
 
