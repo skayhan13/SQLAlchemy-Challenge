@@ -6,18 +6,6 @@
 * The "Images" directory contains visualizations of the plots required in Step 1 of the assignment.
 * app.py is a flask API that was created in accordance with Step 2 of the assignment.  Execute the file in a terminal window to recieve the API URL created.  Paste the URL into the Internet browser of your choice.  API documentation for the /api/v1.0/<start> requires the user to input a start date in the ISO (yyyy-mm-dd) format for the API to return results.  For example, if you wanted temperature data starting on March 1, 2016 you would input the following URL into your browser: http://127.0.0.1:5000//api/v1.0/2016-03-01.  If you wanted temperature data from January 16, 2016 to September 16, 2017 then you would input the following URL into your browser: http://127.0.0.1:5000//api/v1.0/2016-01-16/2017-09-16. These are examples of dynamic API routes.
 
-### Before You Begin
-
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the above changes to GitHub or GitLab.
-
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
-
 ## Step 1 - Climate Analysis and Exploration
 
 To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
@@ -53,6 +41,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
   * List the stations and observation counts in descending order.
 
   * Which station has the highest number of observations?
+![Precipitation_Barchart](Images/Precipitation_Barchart.png)
 
   * Hint: You will need to use a function such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
 
@@ -61,6 +50,8 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
   * Filter by the station with the highest number of observations.
 
   * Plot the results as a histogram with `bins=12`.
+
+![TOBS_Histogram](Images/TOBS_Histogram.png)
 - - -
 
 ## Step 2 - Climate App
